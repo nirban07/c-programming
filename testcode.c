@@ -23,16 +23,37 @@ int main()
     // printf("%d\n",&b);
     // // printf("this is the address of b %d \n",b);
 
-    int a[] = {21,31,42,52,63};
-    int count = sizeof(a);
+    // int a[2][3] = {21,31,42,52,63};
+    // int count = sizeof(a);
     // printf("sizeof a %d\n",sizeof(a));
     // for (int i = 0; i < count; i++)
     // {
     //     printf("%d\n",*(a+i));
     // }
     
-    printf("%d\n",a[0]);
-    // printf("%d\n",a+1);
+    // printf("%d\n",*a);
+    // printf("%d\n",*();
     // arrays are passed by reference or arrrays are reference parameters
-    
+    int a,b,*p,*q;
+    a = 0;
+    b = 1;
+    p = &a;
+    q= &b;
+    printf("this is p %d\n",p);
+    printf("this is q %d\n",q);
+    p=q;
+    printf("%d\n",*p);
+    printf("%d\n",*q);
+    printf("this is p %d\n",p);
+    printf("this is q %d\n",q);
+    *p = 12;
+    printf("%d\n",*p);
+    printf("%d\n",*q);
+    printf("this is p %d\n",p);
+    printf("this is q %d\n",q);
+    printf("address of a %d\n",&a);
+    printf("address of b %d\n",&b);
+    // printf("%d\n",a);
+    // *p=10;
+    // printf("%d\n",a);
 }

@@ -56,11 +56,22 @@ int main()
     // printf("%d\n",a);
     // *p=10;
     // printf("%d\n",a);
-    int a =4;
-    int *p;
-    p = &a;
-    printf("%d\n",*p);
-    p++;
-    printf("%d\n",*p);
-    printf("%d\n",a);
+    // int a =4;
+    // int *p;
+    // p = &a;
+    // printf("%d\n",*p);
+    // p++;
+    // printf("%d\n",*p);
+    // printf("%d\n",a);
+
+    // typedef struct Node{
+    //     int data;
+    //     Node *next;
+    // };
+    int a ,b;
+    float ab, bc;
+    scanf("%d %d",&a,&b);
+    scanf("%f %f",&ab,&bc);
+    printf("%d %d",a+b,(a>b) ? a-b : b-a);
+    printf("%f %f",ab+bc,ab-bc);
 }
